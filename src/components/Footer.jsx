@@ -11,13 +11,6 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-[#093376] text-white py-11 relative overflow-hidden ">
-      <div
-        className="absolute inset-0 bg-fill bg-repeat bg-center opacity-5"
-        style={{
-          backgroundImage: `url(${require("../images/dotted-worldmap.png")})`
-        }}
-      ></div>
-
       <div className="relative z-10 container mx-auto px-4 lg:px-16">
         <div className="flex flex-wrap justify-center gap-8">
           <div className="flex flex-col items-center md:items-start w-full md:w-[300px]">
@@ -156,7 +149,7 @@ const Footer = () => {
 
         <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
           <div className="text-center">
-            <p className="text-sm">©2020 PedStar. All rights reserved</p>
+            <p className="text-sm">©2024 PedStar. All rights reserved</p>
           </div>
           <div className="flex gap-4">
             <a

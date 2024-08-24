@@ -11,7 +11,7 @@ const ContactBanner = () => {
         </p>
       </div>
       <button
-        className="relative rounded-none text-white btn btn-wide text-white border-none overflow-hidden py-4 px-6"
+        className="relative text-white btn btn-wide text-white border-none overflow-hidden py-4 px-6"
         style={{
           backgroundImage:
             "linear-gradient(to right, rgb(255, 192, 0), rgb(255 208 78))"

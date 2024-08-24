@@ -1,0 +1,171 @@
+.shape-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent shapes from overflowing */
+  }
+  
+  .shape {
+    position: absolute;
+    z-index: -1; /* Behind other content */
+    opacity: 0.6; /* Adjusted opacity */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  /* Example styles for different shapes */
+  .shape-1,
+  .shape-2,
+  .shape-3,
+  .shape-4,
+  .shape-5 {
+    border-radius: 50%; /* Circle */
+  }
+  
+  .shape-1 {
+    width: 20%;
+    height: 20%;
+    background-color: #093376;
+    top: 10%;
+    left: 10%;
+  }
+  
+  .shape-2 {
+    width: 30%;
+    height: 30%;
+    background-color: transparent;
+    border: 15px solid #093376; /* Donut */
+    top: 20%;
+    right: 15%;
+  }
+  
+  .shape-3 {
+    width: 25%;
+    height: 25%;
+    background-color: #093376;
+    top: 40%;
+    left: 25%;
+  }
+  
+  .shape-4 {
+    width: 15%;
+    height: 15%;
+    background-color: transparent;
+    border: 7px solid #093376; /* Donut */
+    top: 60%;
+    right: 25%;
+  }
+  
+  .shape-5 {
+    width: 30%;
+    height: 30%;
+    background-color: #093376;
+    top: 70%;
+    left: 50%;
+  }
+  
+  /* Polygon shapes */
+  .shape-6,
+  .shape-7 {
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); /* Pentagon */
+  }
+  
+  .shape-6 {
+    width: 20%;
+    height: 20%;
+    background-color: #093376;
+    top: 30%;
+    left: 5%;
+  }
+  
+  .shape-7 {
+    width: 25%;
+    height: 25%;
+    background-color: transparent;
+    border: 10px solid #093376; /* Donut */
+    top: 50%;
+    right: 20%;
+  }
+  
+  /* Hexagon shapes */
+  .shape-8,
+  .shape-9 {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); /* Hexagon */
+  }
+  
+  .shape-8 {
+    width: 20%;
+    height: 20%;
+    background-color: #093376;
+    top: 10%;
+    right: 10%;
+  }
+  
+  .shape-9 {
+    width: 30%;
+    height: 30%;
+    background-color: transparent;
+    border: 12px solid #093376; /* Donut */
+    top: 80%;
+    left: 20%;
+  }
+  
+  /* Rectangle shapes */
+  .shape-10,
+  .shape-11 {
+    width: 25%;
+    height: 15%;
+    background-color: transparent;
+    border: 7px solid #093376; /* Rectangle with Border */
+  }
+  
+  .shape-10 {
+    top: 40%;
+    left: 70%;
+  }
+  
+  .shape-11 {
+    bottom: 20%;
+    right: 25%;
+  }
+  
+  /* Rotated shapes */
+  .shape-12 {
+    width: 20%;
+    height: 20%;
+    background-color: #093376;
+    transform: rotate(45deg); /* Rotated Square (Diamond) */
+    top: 50%;
+    left: 40%;
+  }
+  
+  /* Triangle shape */
+  .shape-13 {
+    width: 0;
+    height: 0;
+    border-left: 10% solid transparent;
+    border-right: 10% solid transparent;
+    border-bottom: 17% solid #093376; /* Triangle */
+    top: 30%;
+    right: 40%;
+  }
+  
+  /* Octagon shape */
+  .shape-14 {
+    width: 30%;
+    height: 30%;
+    background-color: #093376;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Octagon */
+    top: 70%;
+    left: 10%;
+  }
+  
+  /* Hexagon shape */
+  .shape-15 {
+    width: 25%;
+    height: 25%;
+    background-color: #093376;
+    clip-path: polygon(50% 0%, 80% 20%, 100% 60%, 80% 100%, 20% 100%, 0% 60%); /* Hexagon */
+    top: 20%;
+    right: 20%;
+  }
+  

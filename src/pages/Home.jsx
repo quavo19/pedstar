@@ -3,15 +3,16 @@ import SponsorCarousel from "../components/SponsorCarousel";
 import FeaturedSection from "../components/FeaturedSection";
 import ContactBanner from "../components/ContactBanner";
 import ImageSlider from "../components/BigImageSlider";
+import Shapes from "../components/Shapes";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden	bg-white">
+    <div className="overflow-hidden	bg-blue-50">
       <div
         className="flex flex-col pt-32 lg:flex-row items-center justify-between min-h-screen p-8"
         style={{
           height: "100vh",
-          backgroundImage: `linear-gradient(to right, rgba(1, 26, 67, 1), rgba(255, 255, 255, 0.2)), url(${require("../images/bg2.jpeg")})`,
+          backgroundImage: `linear-gradient(to right, rgba(1, 26, 67, 1), rgba(255, 255, 255, 0)), url(${require("../images/bg2.jpg")})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat"
@@ -32,7 +33,7 @@ export default function Home() {
             achieving impactful results.
           </h3>
           <button
-            className="relative rounded-none text-white btn btn-wide text-white border-none overflow-hidden py-4 px-6"
+            className="relative text-white btn btn-wide text-white border-none overflow-hidden py-4 px-6"
             style={{
               backgroundImage: "linear-gradient(to right, #ffc000, #ffdd80)"
             }}
@@ -54,10 +55,11 @@ export default function Home() {
       />
     </div> */}
       </div>
+
       <SponsorCarousel />
       <FeaturedSection />
       <ContactBanner />
-      <ImageSlider />
+      {/* <ImageSlider /> */}
     </div>
   );
 }
