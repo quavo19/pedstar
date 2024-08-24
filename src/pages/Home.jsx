@@ -6,7 +6,7 @@ import ImageSlider from "../components/BigImageSlider";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden	">
+    <div className="overflow-hidden	bg-white">
       <div
         className="flex flex-col pt-32 lg:flex-row items-center justify-between min-h-screen p-8"
         style={{
