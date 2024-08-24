@@ -49,8 +49,8 @@ const services = [
 
 const FeaturedSection = () => {
   return (
-    <div className="relative p-5 flex flex-col items-center overflow-hidden">
-      <div className="relative p-5 flex flex-col items-center text-center overflow-hidden">
+    <div className="relative flex flex-col items-center overflow-hidden">
+      <div className="relative py-5 flex flex-col items-center text-center overflow-hidden">
         <h2 className="text-2xl font-bold mb-3 text-[#093376]">
           You Have a Business, We Help People Find It
         </h2>
@@ -64,7 +64,7 @@ const FeaturedSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative w-80 p-6 m-4 rounded-xl overflow-hidden bg-white border border-gray-300 text-center"
+              className="relative w-full md:w-80 p-6 m-4 rounded-xl overflow-hidden bg-white border border-gray-300 text-center"
             >
               <img
                 src={require("../images/blue-dot-pattern.webp")}
@@ -77,7 +77,7 @@ const FeaturedSection = () => {
               <h3 className="text-lg font-semibold mb-2 mt-6 text-[#093376]">
                 {service.title}
               </h3>
-              <p className="text-xs">{service.description}</p>
+              <p className="md:text-sm">{service.description}</p>
             </div>
           ))}
         </div>
