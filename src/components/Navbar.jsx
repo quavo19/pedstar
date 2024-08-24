@@ -109,7 +109,7 @@ export default function Navbar() {
       </ul>
       <div className="flex-shrink-0">
         <img
-          src={require("../images/logo.png")}
+          src={require("../images/goldlogo.png")}
           alt="Logo"
           className="h-10 w-auto"
         />
