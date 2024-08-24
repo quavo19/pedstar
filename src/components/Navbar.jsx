@@ -36,13 +36,13 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-gray-800 bg-opacity-40 flex items-center justify-between p-4 fixed top-0 w-full z-10 md:px-24 px-6 z-50">
+    <nav className="bg-gray-800 bg-opacity-70 flex items-center justify-between p-4 fixed top-0 w-full z-10 md:px-24 px-6 z-50">
       <div className="lg:hidden">
         <button onClick={handleMobileMenuToggle}>
           {isMobileMenuOpen ? (
             <CloseIcon className="text-white z-30" />
           ) : (
-            <MenuIcon className="text-white" />
+            <MenuIcon style={{ color: "#fff", fontSize: "36px" }} />
           )}
         </button>
       </div>

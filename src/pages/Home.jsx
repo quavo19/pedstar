@@ -12,7 +12,7 @@ export default function Home() {
         className="flex flex-col pt-32 lg:flex-row items-center justify-between min-h-screen p-8"
         style={{
           height: "100vh",
-          backgroundImage: `linear-gradient(to right, rgba(1, 26, 67, 1), rgba(255, 255, 255, 0)), url(${require("../images/bg2.jpg")})`,
+          backgroundImage: `linear-gradient(to right, rgba(1, 26, 67, 1) 30%, rgba(255, 255, 255, 0)), url(${require("../images/bg2.jpg")})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat"
