@@ -31,7 +31,7 @@ const services = [
   {
     title: "Support Services & Consultancy",
     description:
-      "we offer assistance with work permits, residence permits, immigration and settlement information, and visa on arrival. Our visa services cover destinations including the UK, USA, Dubai, Canada, Schengen, Asia, Sao Tomè, and other locations.",
+      "We offer services and assistance on residence permit, work permit, immigration and settlement processes, documentation, and visa on arrival. Our Tour services covers USA,  UK,  Europe,  Asia,  Dubai, Sao Tomè and other selected destinations.",
     icon: <FaHeadset />
   },
   {
@@ -65,7 +65,7 @@ const FeaturedSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative h-full w-full md:w-80 p-6 m-4 rounded-xl overflow-hidden bg-white border border-gray-300 text-center"
+              className="relative h-full w-full md:w-[350px] p-6 m-4 rounded-xl overflow-hidden bg-white border border-gray-300 text-center"
             >
               <img
                 src={require("../images/blue-dot-pattern.webp")}
