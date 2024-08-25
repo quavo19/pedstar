@@ -7,7 +7,7 @@ import Shapes from "../components/Shapes";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden	bg-blue-50">
+    <div className="overflow-hidden	bg-[#eff6ff80]">
       <div
         className="flex flex-col pt-32 lg:flex-row items-center justify-between min-h-screen p-8"
         style={{

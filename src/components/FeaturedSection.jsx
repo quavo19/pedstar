@@ -29,7 +29,7 @@ const services = [
     icon: <FaBriefcase />
   },
   {
-    title: "Support services and consultancy",
+    title: "Support Services & Consultancy",
     description:
       "we offer assistance with work permits, residence permits, immigration and settlement information, and visa on arrival. Our visa services cover destinations including the UK, USA, Dubai, Canada, Schengen, Asia, Sao Tomè, and other locations.",
     icon: <FaHeadset />
