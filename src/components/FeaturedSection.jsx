@@ -19,7 +19,7 @@ const services = [
   {
     title: "Consultancy & Support Services",
     description:
-      "We offer services and assistance on residence permit, work permit, immigration and settlement processes, documentation, and visa on arrival. Our Tour services covers USA,  UK,  Europe,  Asia,  Dubai, Sao Tomè and other selected destinations.",
+      "We offer services and assistance on residence permit, work permit, immigration and settlement processes, documentation, and visa on arrival. Our tour services covers USA, UK, Europe, Asia, Dubai, Sao Tomè and other selected destinations purposely designed for individuals, students, corporates enterprises, businessmen and women.",
     icon: <FaHeadset />
   },
   {
@@ -71,7 +71,7 @@ const FeaturedSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative h-full w-full md:w-[350px] p-6 m-4 rounded-xl overflow-hidden bg-white border border-gray-300 text-center"
+              className="relative items-center w-full md:w-[350px] p-6 m-4 rounded-xl overflow-hidden bg-white border border-gray-300 text-center"
             >
               <img
                 src={require("../images/blue-dot-pattern.webp")}
@@ -81,10 +81,12 @@ const FeaturedSection = () => {
               <div className="absolute top-2 right-2 p-2 z-10 text-white bg-[#093376] text-lg rounded-full">
                 {service.icon}
               </div>
-              <h3 className="text-lg font-semibold mb-2 mt-6 text-[#093376]">
-                {service.title}
-              </h3>
-              <p className="md:text-sm">{service.description}</p>
+              <div className="flex md:h-[90%] flex-col items-center justify-center">
+                <h3 className="text-lg font-semibold mb-2 mt-6 text-[#093376]">
+                  {service.title}
+                </h3>
+                <p className="md:text-sm">{service.description}</p>
+              </div>
             </div>
           ))}
         </div>
