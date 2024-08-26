@@ -12,11 +12,11 @@ const AboutMe = () => {
   return (
     <div className="bg-white">
       <div className="relative flex justify-between items-center overflow-hidden p-8 bg-blue-50 h-screen">
-        <div className="max-w-lg md:max-w-2xl z-30 mb-32 flex flex-col gap-2">
-          <p className="text-l text-white bg-[#093376] px-4 py-1 border-l-4 border-[#ffc000] w-[160px]">
+        <div className="max-w-lg md:max-w-2xl z-30 mb-32 flex flex-col gap-2 mt-32">
+          <p className="md:text-l text-sm text-white bg-[#093376] px-4 py-1 border-l-4 border-[#ffc000] w-[140px] md:w-[160px]">
             Get To Know Us
           </p>
-          <h1 className="text-5xl font-semibold relative text-[#093376]">
+          <h1 className="md:text-5xl text-3xl font-semibold relative text-[#093376]">
             About Us
           </h1>
           <p className="md:text-l text-[#093376]">
@@ -33,6 +33,7 @@ const AboutMe = () => {
           </p>
           {/* Add more content as needed */}
         </div>
+
         <div className="absolute md:w-[70vw] opacity-40 z-20 md:h-[75vh] w-[100vw] h-[60vh] md:top-[-100px] left-[30%] md:left-[55%] bottom-[-20%] -mt-4">
           <div
             className="relative md:w-[70vw] md:h-[75vh] w-[100vw] h-[60vh] md:opacity-100 bg-[#093376] border-[20px] border-[#093376]"
@@ -70,7 +71,7 @@ const AboutMe = () => {
         <h2 className="text-2xl font-bold mb-3 text-[#093376]">
           Our Guiding Principles
         </h2>
-        <p className="text-base mb-4">
+        <p className="text-base mb-4 text-[#093376]">
           At the heart of everything we do are our mission, vision, and values.
           They shape our actions, drive our commitment, and define our culture.
         </p>
