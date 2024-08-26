@@ -34,7 +34,7 @@ const AboutMe = () => {
           {/* Add more content as needed */}
         </div>
 
-        <div className="absolute md:w-[70vw] opacity-40 z-20 md:h-[75vh] w-[100vw] h-[60vh] md:top-[-100px] left-[30%] md:left-[55%] bottom-[-20%] -mt-4">
+        <div className="absolute md:w-[70vw] opacity-30 z-20 md:h-[75vh] w-[100vw] h-[60vh] md:top-[-100px] left-[30%] md:left-[55%] bottom-[-20%] -mt-4">
           <div
             className="relative md:w-[70vw] md:h-[75vh] w-[100vw] h-[60vh] md:opacity-100 bg-[#093376] border-[20px] border-[#093376]"
             style={{
@@ -58,7 +58,7 @@ const AboutMe = () => {
           </div>
         </div>
         {/* Donut-shaped circles */}
-        <div className="opacity-20">
+        <div className="opacity-10">
           <div className="absolute border-[70px] border-[#093376] rounded-full w-[400px] h-[400px] bottom-10 left-10"></div>
           <div className="absolute border-[50px] border-[#093376] rounded-full w-[350px] h-[350px] bottom-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2"></div>
           {/* Rectangles */}
@@ -178,7 +178,7 @@ const AboutMe = () => {
             borderBottomLeftRadius: "50%",
             borderRight: "none"
           }}
-          className="absolute opacity-20 bg-[#093376] top-0 right-0 w-1/2 h-full overflow-hidden border-[20px] border-[#093376]"
+          className="absolute opacity-30 bg-[#093376] top-0 right-0 w-1/2 h-full overflow-hidden border-[20px] border-[#093376]"
         >
           <img
             style={{
