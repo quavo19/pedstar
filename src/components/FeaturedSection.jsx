@@ -5,7 +5,8 @@ import {
   FaChartLine,
   FaBriefcase,
   FaPlane,
-  FaPrint
+  FaPrint,
+  FaChalkboardTeacher
 } from "react-icons/fa";
 
 const services = [
@@ -15,24 +16,17 @@ const services = [
       "Our brand management process integrates together a perfect mix of modules including defining the brand, positioning the brand, and delivering the brand value constantly.",
     icon: <FaRegLightbulb />
   },
-
+  {
+    title: "Consultancy & Support Services",
+    description:
+      "We offer services and assistance on residence permit, work permit, immigration and settlement processes, documentation, and visa on arrival. Our Tour services covers USA,  UK,  Europe,  Asia,  Dubai, Sao Tomè and other selected destinations.",
+    icon: <FaHeadset />
+  },
   {
     title: "Digital Marketing",
     description:
       "Let PedStar’s digital marketing team help you develop an online marketing strategy to drive more qualified visitors to your business and convert those visitors into leads and sales.",
     icon: <FaChartLine />
-  },
-  {
-    title: "Procurement",
-    description:
-      "PedStar manages your office setup deployments following best industry protocols that will get your office space professionally and running properly. We will procure and deliver all your office needs.",
-    icon: <FaBriefcase />
-  },
-  {
-    title: "Support Services & Consultancy",
-    description:
-      "We offer services and assistance on residence permit, work permit, immigration and settlement processes, documentation, and visa on arrival. Our Tour services covers USA,  UK,  Europe,  Asia,  Dubai, Sao Tomè and other selected destinations.",
-    icon: <FaHeadset />
   },
   {
     title: "Export & Import",
@@ -41,10 +35,22 @@ const services = [
     icon: <FaPlane />
   },
   {
+    title: "Procurement",
+    description:
+      "PedStar manages your office setup deployments following best industry protocols that will get your office space professionally and running properly. We will procure and deliver all your office needs.",
+    icon: <FaBriefcase />
+  },
+  {
     title: "Printing",
     description:
       "We offer full-service printing for big and small businesses. Speed, quality, good finish and delivery matters in everything we do. We keep an eye on the clock, consistently accelerating our response times.",
     icon: <FaPrint />
+  },
+  {
+    title: "Training & Coaching",
+    description:
+      "Our Training & Coaching services are designed to empower your team with the skills and knowledge needed to excel in their roles. We offer personalized coaching sessions and comprehensive training programs tailored to your business needs.",
+    icon: <FaChalkboardTeacher />
   }
 ];
 

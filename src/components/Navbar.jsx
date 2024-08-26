@@ -107,13 +107,13 @@ export default function Navbar() {
           </React.Fragment>
         ))}
       </ul>
-      <div className="flex-shrink-0">
+      <Link to={"./"} className="flex-shrink-0">
         <img
           src={require("../images/goldlogo.png")}
           alt="Logo"
           className="h-10 w-auto"
         />
-      </div>
+      </Link>
       {isMobileMenuOpen && (
         <div
           className="lg:hidden fixed inset-0 bg-[#093376] z-20 flex flex-col items-start justify-start text-white text-lg p-8"
