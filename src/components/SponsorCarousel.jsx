@@ -52,7 +52,8 @@ const SponsorCarousel = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToScroll: 2
+          slidesToScroll: 2,
+          slidesToShow: 3
         }
       }
     ]
