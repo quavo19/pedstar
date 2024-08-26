@@ -118,7 +118,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex items-center justify-center flex-col p-4 bg-[#f9f9f9] h-[70vh]">
+      <div className="relative flex items-left justify-center md:items-start flex-col px-11 py-4 bg-[#f9f9f9] h-[70vh]">
         <h2 className="text-2xl font-bold mb-6 text-[#093376]">
           How Are We Different
         </h2>
@@ -126,7 +126,7 @@ const AboutMe = () => {
         <div className="w-full md:w-1/2">
           <div className="flex flex-col space-y-6">
             <div className="flex items-start gap-5">
-              <div className="flex items-center justify-center min-h-[45px] min-w-[45px] mx-auto rounded-full bg-[#093376]">
+              <div className="flex items-center justify-center  min-h-[45px] min-w-[45px] mx-auto rounded-full bg-[#093376]">
                 <FaCogs className="text-white text-xl" />
               </div>
               <div>
