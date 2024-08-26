@@ -35,24 +35,24 @@ const SponsorCarousel = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 5, // Show 5 items at a time on medium screens and larger
+    slidesToShow: 5,
     slidesToScroll: 5,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false, // Hide navigation arrows
-    centerMode: false, // Enable center mode
-    centerPadding: "0", // Remove default padding in center mode
+    arrows: false,
+    centerMode: false,
+    centerPadding: "0",
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4 // Adjust the number of slides for medium screens
+          slidesToScroll: 3
         }
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2 // Adjust the number of slides for smaller screens
+          slidesToScroll: 2
         }
       }
     ]
