@@ -118,7 +118,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex items-center justify-center flex-col p-4 mb:p-8 my-16 bg-[#f9f9f9] h-[70vh]">
+      <div className="relative flex items-center justify-center flex-col p-4 bg-[#f9f9f9] h-[70vh]">
         <h2 className="text-2xl font-bold mb-6 text-[#093376]">
           How Are We Different
         </h2>
