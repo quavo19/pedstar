@@ -31,7 +31,6 @@ const AboutMe = () => {
             consistently produce impactful work while focusing on campaign
             objectives.
           </p>
-          {/* Add more content as needed */}
         </div>
 
         <div className="absolute md:w-[70vw] opacity-30 z-20 md:h-[75vh] w-[100vw] h-[60vh] md:top-[-100px] left-[30%] md:left-[55%] bottom-[-20%] -mt-4">
@@ -57,14 +56,11 @@ const AboutMe = () => {
             />
           </div>
         </div>
-        {/* Donut-shaped circles */}
         <div className="opacity-10">
           <div className="absolute border-[70px] border-[#093376] rounded-full w-[400px] h-[400px] bottom-10 left-10"></div>
           <div className="absolute border-[50px] border-[#093376] rounded-full w-[350px] h-[350px] bottom-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2"></div>
-          {/* Rectangles */}
           <div className="absolute bg-[#093376] rounded-3xl w-[400px] h-[200px] bottom-1/4 right-1/4 transform rotate-45"></div>
           <div className="absolute bg-[#093376] rounded-3xl w-[250px] h-[100px] bottom-1/5 left-1/4 transform rotate-45"></div>
-          {/* Stars */}
         </div>
       </div>
       <div className="flex flex-col items-center text-center md:p-8 my-16 bg-white ">
