@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import {
   ExpandMore as ExpandMoreIcon,
   Menu as MenuIcon,
@@ -7,25 +7,21 @@ import {
 } from "@mui/icons-material";
 
 export default function Navbar() {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const location = useLocation();
   const [activeItem, setActiveItem] = useState("Home");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = ["Home", "About", "Portfolio", "Contact", "Services"];
-  const dropdownItems = [
-    { name: "Advertising", path: "/advertising" },
-    { name: "Consultancy", path: "/consultancy" },
-    { name: "Corporate Training", path: "/corporate-training" },
-    { name: "Import & Export", path: "/import-and-export" },
-    { name: "Marketing", path: "/marketing" },
-    { name: "Procurement", path: "/procurement" }
-  ];
 
-  const handleDropdownItemClick = (path) => {
-    setActiveItem(path);
-    setDropdownOpen(false);
-    setIsMobileMenuOpen(false);
-  };
+  // Set active item based on the current location path
+  useEffect(() => {
+    const path = location.pathname;
+    const currentItem = navItems.find(
+      (item) =>
+        path === `/${item.toLowerCase()}` || (item === "Home" && path === "/")
+    );
+    setActiveItem(currentItem || "Home");
+  }, [location]);
 
   const handleMobileMenuToggle = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -51,55 +47,14 @@ export default function Navbar() {
           <React.Fragment key={index}>
             <li
               className={`relative flex items-center cursor-pointer ${
-                item !== "Services" && activeItem === item
+                activeItem === item
                   ? "after:block after:border-b-2 after:border-white after:absolute after:top-11 after:left-0 after:right-0"
                   : ""
               }`}
-              onClick={() => {
-                if (item !== "Services") {
-                  setActiveItem(item);
-                }
-              }}
             >
-              {item === "Services" ? (
-                <div
-                  className="flex items-center"
-                  onMouseEnter={() => setDropdownOpen(true)}
-                  onMouseLeave={() => setDropdownOpen(false)}
-                >
-                  <button
-                    className="flex items-center text-white"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    Services
-                    <ExpandMoreIcon className="ml-2" />
-                  </button>
-                  {dropdownOpen && (
-                    <ul className="absolute left-0 mt-[330px] bg-[#00244bc2] text-white rounded-md shadow-lg z-20">
-                      {dropdownItems.map((subitem, subindex) => (
-                        <li
-                          key={subindex}
-                          className="w-52 hover:bg-[#00244bc2]"
-                        >
-                          <Link
-                            to={subitem.path}
-                            onClick={() =>
-                              handleDropdownItemClick(subitem.name)
-                            }
-                            className="block w-full h-full px-4 py-4"
-                          >
-                            {subitem.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              ) : (
-                <Link to={item === "Home" ? "/" : `/${item.toLowerCase()}`}>
-                  {item}
-                </Link>
-              )}
+              <Link to={item === "Home" ? "/" : `/${item.toLowerCase()}`}>
+                {item}
+              </Link>
             </li>
             {index < navItems.length - 1 && (
               <span className="h-4 w-[1px] bg-gray-300 opacity-50 mx-4"></span>
@@ -124,37 +79,13 @@ export default function Navbar() {
           </button>
           {navItems.map((item, index) => (
             <React.Fragment key={index}>
-              {item === "Services" ? (
-                <div className="flex flex-col items-start">
-                  <div className="flex items-center font-light">
-                    Services
-                    <ExpandMoreIcon className="ml-2" />
-                  </div>
-                  <ul className="ml-4 mt-2 space-y-4">
-                    {dropdownItems.map((subitem, subindex) => (
-                      <li
-                        key={subindex}
-                        className="py-1 hover:text-gray-300 font-light"
-                      >
-                        <Link
-                          to={subitem.path}
-                          onClick={() => handleDropdownItemClick(subitem.name)}
-                        >
-                          {subitem.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : (
-                <Link
-                  to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                  onClick={handleCloseMobileMenu}
-                  className="mb-4 font-light"
-                >
-                  {item}
-                </Link>
-              )}
+              <Link
+                to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+                onClick={handleCloseMobileMenu}
+                className="mb-4 font-light"
+              >
+                {item}
+              </Link>
             </React.Fragment>
           ))}
         </div>

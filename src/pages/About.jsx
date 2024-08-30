@@ -11,7 +11,7 @@ import {
 const AboutMe = () => {
   return (
     <div className="bg-white">
-      <div className="relative flex justify-between items-center overflow-hidden p-8 bg-blue-50 h-screen">
+      <div className="relative flex justify-between items-center overflow-hidden p-8 bg-blue-50 h-full md:h-[70vh]">
         <div className="max-w-lg md:max-w-2xl z-30 mb-32 flex flex-col gap-2 mt-32">
           <p className="md:text-l text-sm text-white bg-[#093376] px-4 py-1 border-l-4 border-[#ffc000] w-[140px] md:w-[160px]">
             Get To Know Us
@@ -73,7 +73,7 @@ const AboutMe = () => {
         </p>
         <div className="flex flex-wrap justify-center ">
           <div className="relative flex flex-wrap justify-center">
-            <div className="relative w-full md:w-[300px] p-4 m-4 rounded-xl border-4 border-dotted border-[#093376] text-center">
+            <div className="relative w-full md:w-[300px] p-4 m-4 rounded-xl border-[1px] border-[#093376] text-center">
               <div className="flex items-center justify-center h-12 w-12 mx-auto rounded-full bg-[#093376]">
                 <FaEye className="text-white text-2xl" />
               </div>
@@ -86,7 +86,7 @@ const AboutMe = () => {
                 awareness, improve their sales, and foster their growth.
               </p>
             </div>
-            <div className="relative w-full md:w-[300px] p-4 m-4 rounded-xl border-4 border-dotted border-[#093376] text-center">
+            <div className="relative w-full md:w-[300px] p-4 m-4 rounded-xl border-[1px] border-[#093376] text-center">
               <div className="flex items-center justify-center h-12 w-12 mx-auto rounded-full bg-[#093376]">
                 <FaBullseye className="text-white text-2xl" />
               </div>
@@ -99,7 +99,7 @@ const AboutMe = () => {
                 businesses and realize their marketing goals.
               </p>
             </div>
-            <div className="relative w-full md:w-[300px] p-4 m-4 rounded-xl border-4 border-dotted border-[#093376] text-center">
+            <div className="relative w-full md:w-[300px] p-4 m-4 rounded-xl border-[1px] border-[#093376] text-center">
               <div className="flex items-center justify-center h-12 w-12 mx-auto rounded-full bg-[#093376]">
                 <FaHandHoldingHeart className="text-white text-2xl" />
               </div>
@@ -170,16 +170,16 @@ const AboutMe = () => {
 
         <div
           style={{
-            borderTopLeftRadius: "50%",
-            borderBottomLeftRadius: "50%",
+            borderTopLeftRadius: "30%",
+            borderBottomLeftRadius: "80%",
             borderRight: "none"
           }}
           className="absolute opacity-30 bg-[#093376] top-0 right-0 w-1/2 h-full overflow-hidden border-[20px] border-[#093376]"
         >
           <img
             style={{
-              borderTopLeftRadius: "50%",
-              borderBottomLeftRadius: "50%"
+              borderTopLeftRadius: "30%",
+              borderBottomLeftRadius: "80%"
             }}
             src={require("../images/how-we-work-mk.jpg")}
             alt="Background"
