@@ -111,7 +111,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleInputChange}
                 required
-                className="rounded-lg h-11 mt-2 p-2 border border-gray-300 outline-none text-sm"
+                className="rounded-lg bg-white h-11 mt-2 p-2 border border-gray-300 outline-none text-sm"
               />
               <label
                 htmlFor="phone"
@@ -128,7 +128,7 @@ const Contact = () => {
                 value={formData.phone}
                 onChange={handleInputChange}
                 required
-                className="rounded-lg h-11 mt-2 p-2 border border-gray-300 outline-none text-sm"
+                className="rounded-lg h-11 mt-2 p-2 border bg-white border-gray-300 outline-none text-sm"
               />
               <label
                 htmlFor="email"
@@ -145,7 +145,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleInputChange}
                 required
-                className="rounded-lg h-11 mt-2 p-2 border border-gray-300 outline-none text-sm"
+                className="rounded-lg h-11 mt-2 p-2 border bg-white border-gray-300 outline-none text-sm"
               />
               <label
                 htmlFor="message"
@@ -161,7 +161,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleInputChange}
                 required
-                className="rounded-lg mt-2 p-2 border border-gray-300 outline-none text-sm"
+                className="rounded-lg mt-2 p-2 bg-white border border-gray-300 outline-none text-sm"
                 rows="4"
               />
               <button

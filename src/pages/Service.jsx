@@ -109,7 +109,7 @@ export default function Service() {
         ></span>
       </div>
 
-      <div className="relative flex flex-col md:flex-row justify-between items-center overflow-hidden p-8 bg-blue-50 h-full">
+      <div className="relative flex flex-col md:flex-row justify-between items-center overflow-hidden md:p-16 p-4 bg-blue-50 h-full">
         <div className="flex flex-col md:w-[60%]">
           <div className="max-w-lg md:max-w-2xl z-30 md:mb-32 mb-6 flex flex-col gap-2 mt-32">
             <p className="md:text-l text-sm text-white bg-[#093376] px-4 py-1 border-l-4 border-[#ffc000] w-[180px]">

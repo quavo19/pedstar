@@ -4,6 +4,7 @@ import FeaturedSection from "../components/FeaturedSection";
 import ContactBanner from "../components/ContactBanner";
 import ImageSlider from "../components/BigImageSlider";
 import Shapes from "../components/Shapes";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -38,7 +39,7 @@ export default function Home() {
               backgroundImage: "linear-gradient(to right, #ffc000, #ffdd80)"
             }}
           >
-            <a href="/portfolio">Portfolio</a>
+            <Link to={"/portfolio"}>Portfolio</Link>
             <span
               className="absolute bottom-0 right-0 h-14 w-14 bg-white rounded-full"
               style={{
