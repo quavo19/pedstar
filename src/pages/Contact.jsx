@@ -187,13 +187,13 @@ const Contact = () => {
               </span>
             </form>
           </div>
-          <div className="flex md:max-w-[50% flex-col bg-gray-200 w-full gap-10 md:p-16 px-4 py-11 md:rounded-xl">
+          <div className="flex md:max-w-[50%] md:mt-8 flex-col bg-gray-200 w-full gap-10 md:p-16 px-4 py-9 md:rounded-xl">
             <h2 className="text-2xl font-semibold text-[#093376]">
               Contact Us
             </h2>
             <div className="flex flex-col gap-10">
               <ul className="space-y-3 text-center flex flex-col gap-[10px] md:text-left">
-                <li className="flex items-center text-[#093376] md:justify-center md:justify-start">
+                <li className="flex items-center text-[#093376]  md:justify-start">
                   <FaPhoneAlt className="mr-2" />
                   <a
                     href="tel:+233200111102"
@@ -202,7 +202,7 @@ const Contact = () => {
                     +233 20 011 1102
                   </a>
                 </li>
-                <li className="flex items-center text-[#093376] md:justify-center md:justify-start">
+                <li className="flex items-center text-[#093376]  md:justify-start">
                   <FaPhoneAlt className="mr-2" />
                   <a
                     href="tel:+233507003551"
@@ -211,7 +211,7 @@ const Contact = () => {
                     +233 50 700 3551
                   </a>
                 </li>
-                <li className="flex items-center text-[#093376] md:justify-center md:justify-start">
+                <li className="flex items-center text-[#093376] md:justify-start">
                   <FaEnvelope className="mr-2" />
                   <a
                     href="mailto:info@pedstarghana.com"
@@ -220,7 +220,7 @@ const Contact = () => {
                     info@pedstarghana.com
                   </a>
                 </li>
-                <li className="flex items-center text-[#093376] md:justify-center md:justify-start">
+                <li className="flex items-center text-[#093376] md:justify-start">
                   <FaEnvelope className="mr-2" />
                   <a
                     href="mailto:sales@pedstarghana.com"
@@ -229,7 +229,7 @@ const Contact = () => {
                     sales@pedstarghana.com
                   </a>
                 </li>
-                <li className="flex items-center text-[#093376] justify-center md:justify-start">
+                <li className="flex items-center text-[#093376] md:justify-start">
                   <FaMapMarkerAlt className="mr-2" />
                   <a
                     target="_blank"
