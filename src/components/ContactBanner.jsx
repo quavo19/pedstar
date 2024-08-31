@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ContactBanner = () => {
   return (
@@ -17,7 +18,7 @@ const ContactBanner = () => {
             "linear-gradient(to right, rgb(255, 192, 0), rgb(255 208 78))"
         }}
       >
-        Contact Us
+        <Link to={"/contact"}>Contact Us</Link>
         <span
           className="absolute bottom-0 right-0 h-14 w-14 bg-white rounded-full"
           style={{
