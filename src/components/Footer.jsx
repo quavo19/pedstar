@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {
   FaFacebookF,
+  FaMapMarkerAlt,
   FaTwitter,
   FaInstagram,
   FaPhoneAlt,
@@ -140,6 +141,12 @@ const Footer = () => {
                 >
                   sales@pedstarghana.com
                 </a>
+              </li>
+              <li className="flex items-center justify-center md:justify-start">
+                <FaMapMarkerAlt className="mr-2" />
+                <span className="text-white text-sm">
+                  Oak Link Ring Road East, Labone - Accra, Ghana
+                </span>
               </li>
             </ul>
           </div>

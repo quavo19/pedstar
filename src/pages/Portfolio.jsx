@@ -48,7 +48,6 @@ const Portfolio = () => {
         </div>
       </div>
 
-      {/* Image Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 md:p-8">
         {images.map((image, index) => (
           <div key={index} className="relative group">
