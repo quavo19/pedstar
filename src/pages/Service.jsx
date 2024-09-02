@@ -203,8 +203,8 @@ export default function Service() {
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
           <div className="md:w-1/2 w-full">
             <img
-              className="w-full h-auto rounded-xl border-4 border-white"
-              src={require("../images/about-wm.jpg")}
+              className="w-full h-auto rounded-xl"
+              src={require("../images/ads.png")}
               alt="Advertising Strategy"
             />
           </div>
@@ -334,8 +334,8 @@ export default function Service() {
 
           <div className="md:w-1/2 w-full relative">
             <img
-              className="w-full h-auto rounded-xl border-4 border-[#093376]"
-              src={require("../images/consultancy.jpg")}
+              className="w-full h-auto rounded-xl"
+              src={require("../images/consultant.png")}
               alt="Consultancy Services"
             />
           </div>
@@ -371,8 +371,8 @@ export default function Service() {
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12 relative">
           <div className="md:w-1/2 w-full relative">
             <img
-              className="w-full h-auto rounded-xl border-4 border-white"
-              src={require("../images/corporatetraining.jpg")}
+              className="w-full h-auto rounded-xl"
+              src={require("../images/business.png")}
               alt="Corporate Training"
             />
           </div>
@@ -505,8 +505,8 @@ export default function Service() {
           </div>
           <div className="md:w-1/2 w-full relative">
             <img
-              className="w-full h-auto rounded-xl border-4 border-[#093376]"
-              src={require("../images/export.jpg")}
+              className="w-full h-auto rounded-xl"
+              src={require("../images/export.png")}
               alt="Export and Import Services"
             />
           </div>
@@ -537,8 +537,8 @@ export default function Service() {
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12 relative">
           <div className="md:w-1/2 w-full relative">
             <img
-              className="w-full h-auto rounded-xl border-4 border-white"
-              src={require("../images/marketing.jpg")}
+              className="w-full h-auto rounded-xl"
+              src={require("../images/management-service.png")}
               alt="Marketing Strategies"
             />
           </div>
@@ -664,8 +664,8 @@ export default function Service() {
           </div>
           <div className="md:w-1/2 w-full relative">
             <img
-              className="w-full h-auto rounded-xl border-4 border-[#093376]"
-              src={require("../images/procurement.jpg")}
+              className="w-full h-auto rounded-xl"
+              src={require("../images/agreement.png")}
               alt="Procurement Solutions"
             />
           </div>
