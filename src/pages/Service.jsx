@@ -213,7 +213,6 @@ export default function Service() {
             <h4 className="text-xl md:text-2xl font-semibold text-[#ffc000]">
               Our Process Includes
             </h4>
-
             <div className="flex text-white items-center md:p-4 p-2 md:rounded-3xl rounded-xl w-full">
               <div className="md:w-16 md:h-16 w-6 h-9 md:min-w-[65px] md:min-h-[65px] min-w-[45px] min-h-[45px] rounded-full mr-4 flex items-center justify-center bg-[#ffc000] text-[#093376]">
                 <FaNewspaper className="w-4 h-4 md:h-6 md:w-6" />
